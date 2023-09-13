@@ -126,6 +126,7 @@ function IceCream(){
             <div class="icparallax-content">
                 <h1>We have many different flavors to choose from!</h1>
                 <h2>Click on a flavor to get started!</h2>
+                <h4>(Unclick to remove them)</h4>
             </div>
         </div>
 
@@ -138,13 +139,23 @@ function IceCream(){
                     </div>
                 ))}
             </div> 
+           
+
             <div id="selected-flavors" style={{ top: `${selectedFlavorsTop}px` }}>
             {/* top is a css property mean to determine the distance from the top edge of the element's containing block */}
             {/* px specifies pixels */}
                 <h2>Selected Flavors:</h2>
-                <ul id="flavor-list"></ul>
-                <button id="confirm-button" onClick={confirmSelection}>Confirm Selection</button>
+                <ul id="flavor-list">
+                    {selectedFlavors.map((flavor, index) => (
+                        <li key={index}>{flavor}</li>
+                    ))}
+                </ul>
+                <button id="confirm-button" onClick={confirmSelection}>
+                    Confirm Selection
+                </button>
             </div>
+           
+                
         </div>
 
         

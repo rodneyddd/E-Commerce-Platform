@@ -53,6 +53,8 @@
     display: flex;
     align-items: center;
     background-image: url("/assets/haagen.jpeg"); /* Replace with your image */
+
+
 }
 
 .abimage1 {
@@ -77,6 +79,26 @@
     background-image: url("/assets/insidestore3.jpg"); /* Replace with your image */
 }
 
+.ABmenu-button {
+    display: inline-block; /* Display buttons in a line */
+    margin: 0.03rem; /* Add space around buttons */
+    padding: 1rem 1rem; /* Add padding inside buttons */
+    background-color: rgba(133, 185, 189, 0.74); /* Set background color for buttons */
+    color: rgb(213, 255, 253); /* Set text color for buttons */
+    text-decoration: none; /* Remove underlines from links */
+    border-radius: 10px; /* Add rounded corners to buttons */
+    font-size: 18px; /* Set font size for buttons */
+    font-weight: bold; /* Apply bold font weight */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add smooth transition for hover effect */
+}
+
+.ABmenu-button:hover {
+    background-color: rgb(238, 148, 220); /* Change background color on hover */
+    color: rgb(123, 93, 165); /* Change text color on hover */
+    transform: translateY(-3px); /* Add a slight upward translation */
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2); /* Add a shadow for the 3D effect */
+}
+
 
 
 .centered-text {
@@ -89,7 +111,20 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     font-size: large;
+    align-items: center;
+    text-align: center;
 }
+
+.bol {
+    text-align: center; /* Center-align the buttons within the container */
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    display: flex; /* Use flex display to horizontally center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+}
+
 
 
 

@@ -20,7 +20,11 @@ function Catering()
                         <br/>
                         Our Kits include: 
                         <br/>
-                        Your choice of 4 flavors of ice cream/sorbet, our 8 signature toppings (rainbow sprinkles, chocolate sprinkles, cookie crunch, mini marshmallows, fudge/chocolate syrup, caramel, whipped cream, maraschino cherries), cups, spoons, napkins, scoopers and a tablecloth.
+                        Your choice of 4 flavors of ice cream/sorbet, our 8 signature toppings 
+                        <br/>
+                        (rainbow sprinkles, chocolate sprinkles, cookie crunch, mini marshmallows, fudge/chocolate syrup, caramel, whipped cream, maraschino cherries), 
+                        <br/>
+                        cups, spoons, napkins, scoopers and a tablecloth.
                         <br/>
                         Cozy: 5 pints 10-12 people $98.99 ($8.25 pp)
                         <br/>
@@ -51,17 +55,21 @@ function Catering()
                         <br/>
                         Our catering staff will deliver, set up, serve and clean up.
                         <br/>
+                        <br/>
                         Classic Sundae Bar
                         <br/>
                         Your choice of 8 flavors of ice cream/sorbet, our 16 toppings* served with Haagen-Dazs cups, color-changing spoons, napkins and a tablecloth.
+                        <br/>
                         <br/>
                         Ultimate Sundae Bar with Waffle Bowls
                         <br/>
                         Amp up your Classic Sundae Bar with our waffle bowls (chocolate-dipped with rainbow sprinkles, cookie crunch with peanuts, plain).
                         <br/>
+                        <br/>
                         Waffle Cone Party
                         <br/>
                         Your choice of 4 flavors of ice cream/sorbet, our 8 signature toppings* plus assorted waffle cones (plain, chocolate-dipped with rainbow sprinkles, cookie crunch with peanuts).
+                        <br/>
                         <br/>
                         Shakes/Smoothies
                         <br/>
@@ -69,9 +77,12 @@ function Catering()
                         <br/> 
                         _______________________________________
                         <br/>
-                        *Our 16 toppings: rainbow & chocolate sprinkles, cookie crunch, mini marshmallows, Oreo pieces, mini M&Ms, crushed peanuts, fudge, caramel, whipped cream, crushed pineapple, fresh-cut strawberries, blueberries and bananas.
+                        *Our 16 toppings: rainbow & chocolate sprinkles, cookie crunch, mini marshmallows, 
+                        <br/>
+                        Oreo pieces, mini M&Ms, crushed peanuts, fudge, caramel, whipped cream, crushed pineapple, fresh-cut strawberries, blueberries and bananas.
                         <br/>
                         * Our 8 signature toppings: rainbow & chocolate sprinkles, cookie crunch, mini marshmallows, whipped cream, fudge, & caramel.
+                        <br/>
                         <br/>
                         GET PRICING WITHIN 24 Hours
                         <br/>
@@ -91,6 +102,7 @@ function Catering()
                         Pre-packed cups 
                         <br/>
                         Butter Cookie Cones
+                        <br/>
                         <br/>
                         LARGE EVENTS: WE ASK FOR AT LEAST 5 BUSINESS DAYS NOTICE
                         <br/>
@@ -115,8 +127,8 @@ function Catering()
 
 
 
-            <div class="CAparallax-3">
-                <div class="CApara3-content">
+            <div class="CAparallax-last">
+                <div class="CApara3-last">
                     <h2>Contact Us</h2>
                     <p>Address: 1306 2nd Avenue, Manhattan, New York</p>
                     <p>Email: info@haagendazs.com</p>
