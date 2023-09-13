@@ -1,0 +1,34 @@
+.taskbar {
+    position: fixed;              /* Fixed position to keep it at the top */
+    top: 0;                       /* Position at the top of the viewport */
+    left: 0;                      /* Position at the left edge */
+    width: 100%;                  /* Full width of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 0.5rem;              /* Padding for the links */
+    z-index: 1000;                /* Ensure it's above other content */
+}
+
+.taskbar ul {
+    list-style: none;             /* Remove bullet points from the list */
+    display: flex;                /* Display list items horizontally */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;
+    padding: 0;                   /* Remove padding from the list */
+    margin: 0;                    /* Remove margin from the list */
+}
+
+.taskbar li {
+    margin: 1rem;     
+    display: inline-flex;          /* Margin around list items */
+}
+
+.taskbar a {
+    text-decoration: none;        /* Remove underline from links */
+    color: white;                 /* Text color for links */
+    font-weight: bold;            /* Bold font weight */
+    transition: color 0.3s;       /* Smooth color transition on hover */
+}
+
+.taskbar a:hover {
+    color: rgb(60, 241, 226);                /* Text color on hover */
+}

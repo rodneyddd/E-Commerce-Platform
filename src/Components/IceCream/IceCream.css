@@ -1,0 +1,913 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+
+/* Styling for the floating navlist */
+.taskbar {
+    position: fixed;              /* Fixed position to keep it at the top */
+    top: 0;                       /* Position at the top of the viewport */
+    left: 0;                      /* Position at the left edge */
+    width: 100%;                  /* Full width of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 0.5rem;              /* Padding for the links */
+    z-index: 1000;                /* Ensure it's above other content */
+}
+
+.taskbar ul {
+    list-style: none;             /* Remove bullet points from the list */
+    display: flex;                /* Display list items horizontally */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;
+    padding: 0;                   /* Remove padding from the list */
+    margin: 0;                    /* Remove margin from the list */
+}
+
+.taskbar li {
+    margin: 1rem;     
+    display: inline-flex;          /* Margin around list items */
+}
+
+.taskbar a {
+    text-decoration: none;        /* Remove underline from links */
+    color: white;                 /* Text color for links */
+    font-weight: bold;            /* Bold font weight */
+    transition: color 0.3s;       /* Smooth color transition on hover */
+}
+
+.taskbar a:hover {
+    color: rgb(60, 241, 226);                /* Text color on hover */
+}
+
+
+.icparallax-1 {
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    background-image: url("/assets/ic1.jpeg"); /* Set the background image */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Don't repeat the background image */
+    background-size: cover; /* Cover the entire container */
+    color: rgb(0, 0, 0); /* Set the text color */
+    min-height: 100vh;
+}
+
+.icparallax-content {
+    text-align: center; /* Center-align text */
+    color: rgb(0, 0, 0); /* Set text color to white */
+    padding: 2rem; /* Add padding around the content */
+
+    margin: 0.5rem; /* Add space around buttons */
+    padding: 1rem 2rem; /* Add padding inside buttons */
+    background-color: rgb(159, 226, 223); /* Set background color for buttons */
+    color: rgb(5, 11, 17); /* Set text color for buttons */
+    border-radius: 30px; /* rounds the box */
+
+}
+
+.icparallax-2 {
+    
+    
+    /* Other background properties... */
+    display: flex; /* Use flex display to horizontally center content */
+    /*justify-content: center; /* Center content horizontally */
+    /*align-items: center; /* Center content vertically */
+
+    background-image: url("/assets/colorgradient.jpeg"); /* Set the background image */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Don't repeat the background image */
+    background-size: cover; /* Cover the entire container */
+    color: rgb(0, 0, 0); /* Set the text color */
+    min-height: 140vh;
+    position: relative;
+
+    
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 6 columns for 2x12 layout */
+    gap: 5px; /* Gap between images */
+    padding: 30px;
+    position: relative;
+
+
+    /*margin-left: 10px;*/
+}
+
+.image-with-text {
+    text-align: center;
+    width: 270px;
+}
+
+.image-with-text img {
+    max-width: 70%;
+    height: auto;
+}
+
+.parger {
+    max-width: 0%;
+    height: auto;
+}
+
+.image-text {
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(175, 103, 103, 0.8);
+    margin-top: 10px;
+    color: rgb(46, 234, 255);
+}
+
+/*----------VANILLA------------*/
+
+.image-textv{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);align-self: center;
+
+    align-self: center;
+    background-position: 0 90%;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+.image-textv:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imv{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imv:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*----------CHOCOLATE------------*/
+
+.image-textcho{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(136, 70, 70, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    background-position: 0 90%;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+.image-textcho:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imchoco{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imchoco:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*-------------STRAWBERRY-----------*/
+
+.image-textstraw {
+    align-self: center;
+    background-position: 0 90%;
+    background-color: rgba(228, 122, 223, 0.762);
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: rgb(196, 24, 24);
+    transition: all 235ms ease-in-out;
+    
+}
+  
+.image-textstraw:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imstraw{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imstraw:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*-----------ROCKY ROAD--------------*/
+
+
+.image-textRR {
+
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(136, 70, 70, 0.762);
+    margin-top: 10px;
+    color: rgb(232, 221, 221);
+
+    align-self: center;
+    background-position: 0 90%;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+    
+}
+  
+.image-textRR:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imRR{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imRR:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*---------------Cookies & Cream----------*/
+
+.image-textCCr{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+
+    align-self: center;
+    background-position: 0 90%;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+.image-textCCr:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imCCr{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCCr:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*---------------Cookies Dough----------*/
+
+.image-textCD{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    color: rgb(176, 150, 89);
+
+    align-self: center;
+    background-position: 0 90%;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    transition: all 235ms ease-in-out;
+}
+
+.image-textCD:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.imCD{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCD:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*-------------DULCE DE LECHE----------*/
+
+.image-textDDL{ /* defining the text */
+    border: 2px solid #cc9827;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(231, 192, 62, 0.762);
+    margin-top: 10px;
+    color: rgb(177, 104, 14);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-textDDL:hover{  /* making the text hover*/
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imDDL{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imDDL:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*------------CARAMEL CONE---------------*/
+
+.image-textCC{ /* defining the text */
+    border: 2px solid #cc9827;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(231, 192, 62, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-textCC:hover{  /* making the text hover*/
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imCC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCC:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*-------PRALINES & CREAM----------*/
+
+.image-textPnC{ /* defining the text */
+    border: 2px solid #cc9827;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(231, 192, 62, 0.762);
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-textPnC:hover{  /* making the text hover*/
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imPnC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imPnC:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*-----------------*/
+
+.image-textMC{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-textMC:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imMC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imMC:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*------------MIDNIGHT COOKIES & CREAM-----------*/
+
+.image-textMCC{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(136, 70, 70, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textMCC:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imMCC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imMCC:hover{
+    transform: scale(1.02); /* Scale the image by 5% on hover */
+}
+
+
+/*-----------------BELGIAN CHOCOLATE----------*/
+
+.image-textBC{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(136, 70, 70, 0.762);
+    margin-top: 10px;
+    color: rgb(194, 170, 144);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textBC:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imBC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imBC:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*----------BROWNIES A LA MODE------------*/
+
+.image-textBALM{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(209, 188, 188, 0.762);
+    margin-top: 10px;
+    color: rgb(119, 76, 73);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textBALM:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imBALM{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imBALM:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------BUTTER PECAN------------*/
+
+.image-textBP{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(229, 226, 180, 0.762);
+    margin-top: 10px;
+    color: rgb(117, 92, 69);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textBP:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imBP{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imBP:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------VANILLA SWISS ALMOND------------*/
+
+.image-textVSA{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textVSA:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imVSA{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imVSA:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------COFFEE------------*/
+
+.image-textCoff{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(223, 199, 144, 0.762);
+    margin-top: 10px;
+    color: rgb(119, 76, 73);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textCoff:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imCoff{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCoff:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------Coffee Chip------------*/
+
+.image-textCoffChip{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(223, 199, 144, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textCoffChip:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imCoffChip{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCoffChip:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------Pineapple Coconut------------*/
+
+.image-textPC{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(242, 243, 233, 0.762);
+    margin-top: 10px;
+    color: rgb(178, 164, 8);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textPC:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imPC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imPC:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------IRISH CREAM BROWNIE------------*/
+
+.image-textICB{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(209, 188, 188, 0.762);
+    margin-top: 10px;
+    color: rgb(83, 53, 51);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textICB:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imICB{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imICB:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------VANILLA CHOCOLATE CHIP------------*/
+
+.image-textVCC{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.762);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textVCC:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imVCC{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imVCC:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------RUM RAISIN-----------*/
+
+.image-textRumR{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(209, 188, 188, 0.762);
+    margin-top: 10px;
+    color: rgb(82, 52, 85);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textRumR:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imRumR{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imRumR:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------Pistachio------------*/
+
+.image-textPist{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(209, 188, 188, 0.762);
+    margin-top: 10px;
+    color: rgb(122, 122, 83);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textPist:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imPist{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imPist:hover{
+    transform: scale(1.03); /* Scale the image by 5% on hover */
+}
+
+/*----------CHOCOLATE PEANUT BUTTER PRETZEL------------*/
+
+.image-textCPBP{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(124, 98, 65, 0.762);
+    margin-top: 10px;
+    color: rgb(205, 150, 83);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textCPBP:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imCPBP{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCPBP:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------CHOCOLATE PEANUT BUTTER PRETZEL------------*/
+
+.image-textCPBP{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(124, 98, 65, 0.762);
+    margin-top: 10px;
+    color: rgb(205, 150, 83);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textCPBP:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imCPBP{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imCPBP:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+/*----------WHITE CHOCOLATE RASPBERRY------------*/
+
+.image-textWCR{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(242, 238, 233, 0.762);
+    margin-top: 10px;
+    color: rgb(227, 137, 163);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textWCR:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imWCR{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imWCR:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+
+/*----------SEA SALT CARAMEL TRUFFLE------------*/
+
+.image-textSSCT{
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(241, 151, 32, 0.762);
+    margin-top: 10px;
+    color: rgb(227, 218, 207);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.image-textSSCT:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.imSSCT{
+    overflow: hidden; /* Hide overflow when image expands */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.imSSCT:hover{
+    transform: scale(1.04); /* Scale the image by 5% on hover */
+}
+
+
+#selected-flavors {
+    position: absolute;
+    width: 230px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9c4;
+    box-sizing: border-box;
+    margin-top: 330px;
+    border-radius: 10px;
+}
+
+#flavor-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#flavor-list li {
+    margin-bottom: 5px;
+}
+
+#confirm-button {
+    margin-top: 10px;
+    background-color: #74ebdf;
+    color: rgb(139, 139, 139);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+
+.icparallax-last {
+    /* The image used for the first parallax section */
+    background-image: url("/assets/black.jpeg");
+    min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
+    
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    color: white;
+    padding: 2rem;
+
+}
+
+.icpara3-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+  

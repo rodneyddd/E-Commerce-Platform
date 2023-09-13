@@ -1,0 +1,195 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the floating navlist */
+.taskbar {
+    position: fixed;              /* Fixed position to keep it at the top */
+    top: 0;                       /* Position at the top of the viewport */
+    left: 0;                      /* Position at the left edge */
+    width: 100%;                  /* Full width of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 0.5rem;              /* Padding for the links */
+    z-index: 1000;                /* Ensure it's above other content */
+}
+
+.taskbar ul {
+    list-style: none;             /* Remove bullet points from the list */
+    display: flex;                /* Display list items horizontally */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;
+    padding: 0;                   /* Remove padding from the list */
+    margin: 0;                    /* Remove margin from the list */
+}
+
+.taskbar li {
+    margin: 1rem;     
+    display: inline-flex;          /* Margin around list items */
+}
+
+.taskbar a {
+    text-decoration: none;        /* Remove underline from links */
+    color: white;                 /* Text color for links */
+    font-weight: bold;            /* Bold font weight */
+    transition: color 0.3s;       /* Smooth color transition on hover */
+}
+
+.taskbar a:hover {
+    color: rgb(60, 241, 226);                /* Text color on hover */
+}
+
+
+
+/* Styling for the parallax section with two images */
+.parallax-two-images {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/haagen.jpeg"); /* Replace with your image */
+}
+
+.image1 {
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/insidestore.jpeg"); /* Replace with your image */
+}
+
+.image2 {
+    min-height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/insidestore3.jpg"); /* Replace with your image */
+}
+
+
+
+.centered-text {
+    position: fixed;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a background color with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: large;
+}
+
+
+
+
+.CAparallax-3 {
+    /* The image used for the first parallax section */
+    background-color: black;
+    min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
+    
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    color: white;
+    padding: 2rem;
+
+}
+
+.CApara3-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.CAparallax-1 {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/gummyice.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara1{
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /*font-size: large;*/
+}
+
+.CAparallax-2 {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/haagen1.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara2{
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.CAparallax3 {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/haagen2.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara3{
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
