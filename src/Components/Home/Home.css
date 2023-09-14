@@ -154,7 +154,7 @@
 
 .p2p5-container{
     /*background-color: white; /* Set background color for buttons */
-    color: rgb(22, 99, 99); /* Set text color for buttons */
+    color: rgb(87, 172, 172); /* Set text color for buttons */
     text-decoration: none; /* Remove underlines from links */
     border-radius: 10px; /* Add rounded corners to buttons */
     padding: 10px;
@@ -165,7 +165,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #008cff;
+    background-color: hsl(206, 51%, 62%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -174,7 +174,7 @@
 }
 
 .buttonn:hover {
-    background-color: #ff11ff;
+    background-color: #b75cb7;
     color:rgb(255, 255, 255);
 }
 

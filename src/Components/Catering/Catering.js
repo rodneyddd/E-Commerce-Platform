@@ -18,6 +18,7 @@ function Catering()
                         <br/>
                         WE ASK FOR AT LEAST 3 BUSINESS DAYS NOTICE
                         <br/>
+                        <br/>
                         Our Kits include: 
                         <br/>
                         Your choice of 4 flavors of ice cream/sorbet, our 8 signature toppings 
@@ -83,7 +84,7 @@ function Catering()
                         <br/>
                         * Our 8 signature toppings: rainbow & chocolate sprinkles, cookie crunch, mini marshmallows, whipped cream, fudge, & caramel.
                         <br/>
-                        <br/>
+                        <br/> 
                         GET PRICING WITHIN 24 Hours
                         <br/>
                         Email nycicecream@gmail.com with your headcount, event address, date, time and duration.                

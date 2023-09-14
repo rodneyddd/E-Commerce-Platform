@@ -83,8 +83,8 @@
     display: inline-block; /* Display buttons in a line */
     margin: 0.03rem; /* Add space around buttons */
     padding: 1rem 1rem; /* Add padding inside buttons */
-    background-color: rgba(133, 185, 189, 0.74); /* Set background color for buttons */
-    color: rgb(213, 255, 253); /* Set text color for buttons */
+    background-color: rgb(133, 185, 189); /* Set background color for buttons */
+    color: rgb(235, 255, 254); /* Set text color for buttons */
     text-decoration: none; /* Remove underlines from links */
     border-radius: 10px; /* Add rounded corners to buttons */
     font-size: 18px; /* Set font size for buttons */
@@ -115,11 +115,11 @@
     text-align: center;
 }
 
-.bol {
+.exfoodlinks {
     text-align: center; /* Center-align the buttons within the container */
     align-items: center;
     position: relative;
-    gap: 20px;
+    gap: 30px;
     display: flex; /* Use flex display to horizontally center content */
     justify-content: center; /* Center content horizontally */
     align-items: center;

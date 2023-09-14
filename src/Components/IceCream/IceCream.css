@@ -877,6 +877,16 @@
     border-radius: 10px;
 }
 
+#clear-button {
+    margin-top: 10px;
+    background-color: #e81b5c;
+    color: rgb(230, 221, 221);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 
 
 

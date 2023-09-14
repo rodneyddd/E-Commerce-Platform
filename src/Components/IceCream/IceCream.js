@@ -110,10 +110,14 @@ function IceCream(){
                 }
             }
         };
+        
 
         //The window.confirm method is a built-in JavaScript function
         // that displays a confirmation dialog box with a message and two buttons: "OK" and "Cancel."
 
+        const clearSelection = () => {
+            setSelectedFlavors([]); // Clear the selected flavors array
+          };
         
 
     return(
@@ -152,6 +156,9 @@ function IceCream(){
                 </ul>
                 <button id="confirm-button" onClick={confirmSelection}>
                     Confirm Selection
+                </button>
+                <button id="clear-button" onClick={clearSelection}>
+                    Clear All Flavors
                 </button>
             </div>
            

@@ -33,7 +33,7 @@ function About()
                     Indulge in the convenience of exploring our exceptional products and placing orders online through popular platforms:  
                     <br/> 
                     <br/>
-                    <div class="bol">
+                    <div class="exfoodlinks">
                         <a href="https://www.ubereats.com/store/haagen-dazs-1306-2nd-ave/K_rZuszoV-uSE2P-fYCCEw?diningMode=DELIVERY&sc=SEARCH_SUGGESTION" class="ABmenu-button">Uber Eats</a>  
                         <a href="https://www.doordash.com/store/h%C3%A4agen-dazs-new-york-25017946/" class="ABmenu-button">DoorDash</a> 
                         <a href="https://www.grubhub.com/restaurant/haagen-dazs-1306-2nd-ave-new-york/5848608" class="ABmenu-button">GrubHub</a>      
