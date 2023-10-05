@@ -49,7 +49,7 @@
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
 
-    background-image: url("/assets/ic1.jpeg"); /* Set the background image */
+    background-image: url("/public/assets/ic1.jpeg"); /* Set the background image */
     background-attachment: fixed; /* Fixed background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Don't repeat the background image */
@@ -79,24 +79,27 @@
     /*justify-content: center; /* Center content horizontally */
     /*align-items: center; /* Center content vertically */
 
-    background-image: url("/assets/colorgradient.jpeg"); /* Set the background image */
+    background-image: url("/public/assets/colorgradient.jpeg"); /* Set the background image */
     background-attachment: fixed; /* Fixed background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Don't repeat the background image */
     background-size: cover; /* Cover the entire container */
     color: rgb(0, 0, 0); /* Set the text color */
     min-height: 140vh;
+    width: 100%;
     position: relative;
 
     
 }
 
 .image-grid {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-template-columns: repeat(5, 1fr); /* 6 columns for 2x12 layout */
     gap: 5px; /* Gap between images */
     padding: 30px;
-    position: relative;
+
 
 
     /*margin-left: 10px;*/
@@ -608,9 +611,9 @@
     border: 2px solid #000000;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgba(242, 243, 233, 0.762);
+    background-color: rgba(255, 255, 255, 0.762);
     margin-top: 10px;
-    color: rgb(178, 164, 8);
+    color: rgb(218, 205, 24);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -848,14 +851,15 @@
 
 
 #selected-flavors {
-    position: absolute;
-    width: 230px; /* Adjust the width as needed */
+    width: 330px; /* Adjust the width as needed */
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9c4;
     box-sizing: border-box;
-    margin-top: 330px;
+    position: sticky;
     border-radius: 10px;
+    margin-right: 50px;
+    height: 300px;
 }
 
 #flavor-list {
@@ -893,7 +897,7 @@
 
 .icparallax-last {
     /* The image used for the first parallax section */
-    background-image: url("/assets/black.jpeg");
+    background-image: url("/public/assets/black.jpeg");
     min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
     
     background-position: center; /* Center the background image */

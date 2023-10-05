@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom';
@@ -8,6 +8,8 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import IceCream from './Components/IceCream/IceCream';
 import Catering from './Components/Catering/Catering';
+import Cart from './Components/Cart/Cart';
+
 
 
 function ScrollToTop() {
@@ -24,11 +26,13 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [cartitems, setcartitems] = useState([])
   return (
     <>
     
     <Router>
     <ScrollToTop/>
+    <Cart/>
       <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/Home"  exact element={<Home/>} />

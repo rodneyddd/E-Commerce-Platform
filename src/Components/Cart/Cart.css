@@ -1,0 +1,12 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.cart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,8 +1,9 @@
 import "./IceCream.css"
 import React, { useState, useEffect } from 'react';
 import Navbar from "../Navbar/Navbar";
+import Cart from "../Cart/Cart";
 
-function IceCream(){
+function IceCream(props){
 
     const [selectedFlavors, setSelectedFlavors] = useState([]);
 
@@ -13,25 +14,25 @@ function IceCream(){
         { name: 'Rocky Road', src: '../assets/rockyroad.jpeg', imageClass: 'imRR', textClass: 'image-textRR'},
         { name: 'Cookies & Cream', src: '../assets/cookiescream.jpeg', imageClass: 'imCCr', textClass: 'image-textCCr'},
         { name: 'Cookie Dough', src: '../../assets/cookiedough.jpeg', imageClass: 'imCD', textClass: 'image-textCD'},
-        { name: 'Dulce de Leche', src: 'dulce.jpeg', imageClass: 'imDDL', textClass: 'image-textDDL'},
-        { name: 'Caramel Cone', src: 'CaraCone.jpeg', imageClass: 'imCC', textClass: 'image-textCC'},
-        { name: 'Pralines & Cream', src: 'Praline.jpeg', imageClass: 'imPnC', textClass: 'image-textPnC'},
-        { name: 'Mint Chip', src: 'mint.jpeg', imageClass: 'imMC', textClass: 'image-textMC'},
-        { name: 'Midnight Cookies & Cream', src: 'Midnight.jpeg', imageClass: 'imMCC', textClass: 'image-textMCC'},
-        { name: 'Belgian Chocolate', src: 'belgianchoco.jpeg', imageClass: 'imBC', textClass: 'image-textBC'},
-        { name: 'Brownies A La Mode', src: 'brownie.jpeg', imageClass: 'imBALM', textClass: 'image-textBALM'},
-        { name: 'Butter Pecan', src: 'butterpecan.jpeg', imageClass: 'imBP', textClass: 'image-textBP'},
-        { name: 'Vanilla Swiss Almond', src: 'VanillaSA.jpeg', imageClass: 'imVSA', textClass: 'image-textVSA'},
-        { name: 'Coffee', src: 'coffee.jpeg', imageClass: 'imCoff', textClass: 'image-textCoff'},
-        { name: 'Coffee Chip', src: 'coffeechip.jpeg', imageClass: 'imCoffChip', textClass: 'image-textCoffChip'},
-        { name: 'Pineapple Coconut', src: 'pineapplecoco.jpeg', imageClass: 'imPC', textClass: 'image-textPC' },
-        { name: 'Irish Cream Brownie', src: 'irishcream.png', imageClass: 'imICB', textClass: 'image-textICB' },
-        { name: 'Vanilla Chocolate Chip', src: 'vanillachocochip.jpeg', imageClass: 'imVCC', textClass: 'image-textVCC' },
-        { name: 'Rum Raisin', src: 'rumraisin.jpeg', imageClass: 'imRumR', textClass: 'image-textRumR' },
-        { name: 'Pistachio', src: 'pistachio.jpeg', imageClass: 'imPist', textClass: 'image-textPist' },
-        { name: 'Chocolate Peanut Butter Pretzel', src: 'CPBP.png', imageClass: 'imCPBP', textClass: 'image-textCPBP' },
-        { name: 'White Chocolate Raspberry', src: 'WCR.jpeg', imageClass: 'imWCR', textClass: 'image-textWCR' },
-        { name: 'Sea Salt Caramel Truffle', src: 'IMG-0505.JPG', imageClass: 'imSSCT', textClass: 'image-textSSCT' },
+        { name: 'Dulce de Leche', src: '/assets/dulce.jpeg', imageClass: 'imDDL', textClass: 'image-textDDL'},
+        { name: 'Caramel Cone', src: '/assets/CaraCone.jpeg', imageClass: 'imCC', textClass: 'image-textCC'},
+        { name: 'Pralines & Cream', src: '/assets/Praline.jpeg', imageClass: 'imPnC', textClass: 'image-textPnC'},
+        { name: 'Mint Chip', src: '/assets/mint.jpeg', imageClass: 'imMC', textClass: 'image-textMC'},
+        { name: 'Midnight Cookies & Cream', src: '../assets/Midnight.jpg', imageClass: 'imMCC', textClass: 'image-textMCC'},
+        { name: 'Belgian Chocolate', src: '/assets/belgianchoco.jpeg', imageClass: 'imBC', textClass: 'image-textBC'},
+        { name: 'Brownies A La Mode', src: '../assets/brownie.png', imageClass: 'imBALM', textClass: 'image-textBALM'},
+        { name: 'Butter Pecan', src: '/assets/butterpecan.jpeg', imageClass: 'imBP', textClass: 'image-textBP'},
+        { name: 'Vanilla Swiss Almond', src: '/assets/VanillaSA.jpeg', imageClass: 'imVSA', textClass: 'image-textVSA'},
+        { name: 'Coffee', src: '/assets/coffee.jpeg', imageClass: 'imCoff', textClass: 'image-textCoff'},
+        { name: 'Coffee Chip', src: '/assets/coffeechip.jpeg', imageClass: 'imCoffChip', textClass: 'image-textCoffChip'},
+        { name: 'Pineapple Coconut', src: '/assets/pineapplecoco.jpeg', imageClass: 'imPC', textClass: 'image-textPC' },
+        { name: 'Irish Cream Brownie', src: '/assets/irishcream.png', imageClass: 'imICB', textClass: 'image-textICB' },
+        { name: 'Vanilla Chocolate Chip', src: '/assets/vanillachocochip.jpeg', imageClass: 'imVCC', textClass: 'image-textVCC' },
+        { name: 'Rum Raisin', src: '/assets/rumraisin.jpeg', imageClass: 'imRumR', textClass: 'image-textRumR' },
+        { name: 'Pistachio', src: '/assets/pistachio.jpeg', imageClass: 'imPist', textClass: 'image-textPist' },
+        { name: 'Chocolate Peanut Butter Pretzel', src: '/assets/CPBP.png', imageClass: 'imCPBP', textClass: 'image-textCPBP' },
+        { name: 'White Chocolate Raspberry', src: '/assets/WCR.jpeg', imageClass: 'imWCR', textClass: 'image-textWCR' },
+        { name: 'Sea Salt Caramel Truffle', src: '/assets/IMG-0505.JPG', imageClass: 'imSSCT', textClass: 'image-textSSCT' },
         
         ];
 
@@ -70,6 +71,7 @@ function IceCream(){
             };
         }, []);
 
+        let itemcount = 0;
         const toggleFlavor = (flavorName) => {
             const index = selectedFlavors.indexOf(flavorName);
             // getting the index of the clicked flavor in the selectedFlavors array
@@ -95,21 +97,27 @@ function IceCream(){
             //this else makes the flavor get unclicked
         };
 
-        const confirmSelection = () => {
+        const confirmSelection = (updateCartItemCount, openCart) => {
             if (selectedFlavors.length === 0) {
-                alert("You need to select at least one flavor.");
+              alert("You need to select at least one flavor.");
             } else if (selectedFlavors.length === 1) {
-                if (window.confirm("Are you sure you only want one flavor?")) {
-                    // Redirect to a link for one flavor selection
-                    window.location.href = "link-for-one-flavor.html";
-                }
+              if (window.confirm("Are you sure you only want one flavor?")) {
+                // Perform any necessary actions for one flavor selection
+              }
             } else if (selectedFlavors.length === 2) {
-                if (window.confirm("Are you sure you want these two flavors?")) {
-                    // Redirect to a link for two flavor selection
-                    window.location.href = "cakelayer.html";
-                }
+              if (window.confirm("Are you sure you want these two flavors?")) {
+                // Perform any necessary actions for two flavor selection
+              }
             }
-        };
+          
+            // Update the cart count
+            
+            setcartitems(cartitems + 1);
+          
+            // Open the cart when a selection is confirmed
+            openCart();
+          };
+          
         
 
         //The window.confirm method is a built-in JavaScript function
@@ -118,6 +126,23 @@ function IceCream(){
         const clearSelection = () => {
             setSelectedFlavors([]); // Clear the selected flavors array
           };
+
+
+        // State to track the number of items in the cart
+        const [cartItemCount, setCartItemCount] = useState(0);
+
+        // updating cart count
+        const updateCartItemCount = (count) => {
+            setCartItemCount(count);
+        };
+
+        const [isCartOpen, setIsCartOpen] = useState(false); // State to manage cart visibility
+
+  
+
+        const openCart = () => {
+            setIsCartOpen(true);
+        };
         
 
     return(
@@ -154,15 +179,15 @@ function IceCream(){
                         <li key={index}>{flavor}</li>
                     ))}
                 </ul>
-                <button id="confirm-button" onClick={confirmSelection}>
+                <button id="confirm-button" onClick={() => confirmSelection(updateCartItemCount, openCart)}>
                     Confirm Selection
                 </button>
                 <button id="clear-button" onClick={clearSelection}>
                     Clear All Flavors
                 </button>
             </div>
-           
-                
+
+            {isCartOpen && <Cart itemCount={cartItemCount} />}
         </div>
 
         

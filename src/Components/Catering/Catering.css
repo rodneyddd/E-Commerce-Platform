@@ -23,7 +23,7 @@
     display: flex;
     
     align-items: center;
-    background-image: url("/assets/gummyice.jpeg"); /* Replace with your image */
+    background-image: url("/public/assets/gummyice.jpeg"); /* Replace with your image */
     text-align: center;
 }
 
@@ -50,7 +50,7 @@
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-image: url("/assets/haagen1.jpeg"); /* Replace with your image */
+    background-image: url("/public/assets/haagen1.jpeg"); /* Replace with your image */
     text-align: center;
 }
 
@@ -76,7 +76,7 @@
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-image: url("/assets/haagen2.jpeg"); /* Replace with your image */
+    background-image: url("/public/assets/haagen2.jpeg"); /* Replace with your image */
     text-align: center;
 }
 
