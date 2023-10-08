@@ -1,0 +1,210 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+.taskbar {
+    position: fixed;              /* Fixed position to keep it at the top */
+    top: 0;                       /* Position at the top of the viewport */
+    left: 0;                      /* Position at the left edge */
+    width: 100%;                  /* Full width of the viewport */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 0.5rem;              /* Padding for the links */
+    z-index: 1000;                /* Ensure it's above other content */
+}
+
+.taskbar ul {
+    list-style: none;             /* Remove bullet points from the list */
+    display: flex;                /* Display list items horizontally */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;
+    padding: 0;                   /* Remove padding from the list */
+    margin: 0;                    /* Remove margin from the list */
+}
+
+.taskbar li {
+    margin: 1rem;     
+    display: inline-flex;          /* Margin around list items */
+}
+
+.taskbar a {
+    text-decoration: none;        /* Remove underline from links */
+    color: white;                 /* Text color for links */
+    font-weight: bold;            /* Bold font weight */
+    transition: color 0.3s;       /* Smooth color transition on hover */
+}
+
+.taskbar a:hover {
+    color: rgb(60, 241, 226);                /* Text color on hover */
+}
+
+
+
+
+.parallax-1 {
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    background-image: url("/public/assets/ic3.jpeg"); /* Set the background image */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Don't repeat the background image */
+    background-size: cover; /* Cover the entire container */
+    color: rgb(0, 0, 0); /* Set the text color */
+    min-height: 100vh;
+}
+
+.parallax-content {
+    text-align: center; /* Center-align text */
+    color: rgb(0, 0, 0); /* Set text color to white */
+    padding: 2rem; /* Add padding around the content */
+
+    margin: 0.5rem; /* Add space around buttons */
+    padding: 1rem 2rem; /* Add padding inside buttons */
+    background-color: rgb(91, 233, 226); /* Set background color for buttons */
+    color: rgb(5, 11, 17); /* Set text color for buttons */
+    border-radius: 30px; /* rounds the box */
+
+}
+
+
+.parallax-2 {
+    background-image: url("/public/assets/haagen.jpeg"); /* Set the background image */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Don't repeat the background image */
+    background-size: cover; /* Cover the entire container */
+    color: rgb(0, 0, 0); /* Set the text color */
+    min-height: 150vh;
+    /* Other background properties... */
+    display: flex; /* Use flex display to horizontally center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative;
+}
+
+.cold{
+    position: absolute; 
+    /*top: 0;
+    left: 0; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    margin-top: 30px;
+    text-align: center; /* all the text in the box is centered*/
+
+    
+    top: 30%; /* Position from the vertical center */
+    left: 50%; /* Position from the horizontal center */
+    transform: translate(-50%, -50%); /* Center the div */
+   
+
+}
+
+
+
+.button-container {
+    text-align: center; /* Center-align the buttons within the container */
+    align-items: center;
+    position: relative;
+}
+
+.menu-button {
+    display: inline-block; /* Display buttons in a line */
+    margin: 0.5rem; /* Add space around buttons */
+    padding: 1.5rem 3rem; /* Add padding inside buttons */
+    background-color: white; /* Set background color for buttons */
+    color: rgb(55, 139, 167); /* Set text color for buttons */
+    text-decoration: none; /* Remove underlines from links */
+    border-radius: 10px; /* Add rounded corners to buttons */
+    font-size: 18px; /* Set font size for buttons */
+    font-weight: bold; /* Apply bold font weight */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add smooth transition for hover effect */
+}
+
+.menu-button:hover {
+    background-color: rgb(183, 149, 182); /* Change background color on hover */
+    color: rgb(255, 244, 158); /* Change text color on hover */
+    transform: translateY(-3px); /* Add a slight upward translation */
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2); /* Add a shadow for the 3D effect */
+}
+
+.parallax-2p5 {
+    
+    background-image: url("/public/assets/IMG-0117.jpg");
+    min-height: 200vh; /* Set a minimum height of 100% of the viewport height */
+    /*background-attachment: fixed;*/
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+     
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+}
+
+.p2p5-container{
+    /*background-color: white; /* Set background color for buttons */
+    color: rgb(87, 172, 172); /* Set text color for buttons */
+    text-decoration: none; /* Remove underlines from links */
+    border-radius: 10px; /* Add rounded corners to buttons */
+    padding: 10px;
+
+}
+
+.buttonn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsl(206, 51%, 62%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.buttonn:hover {
+    background-color: #b75cb7;
+    color:rgb(255, 255, 255);
+}
+
+.parallax-3 {
+    /* The image used for the first parallax section */
+    background-image: url("/public/assets/black.jpeg");
+    min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
+    background-attachment: fixed;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    color: white;
+    padding: 2rem;
+
+    
+
+}
+
+.para3-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+

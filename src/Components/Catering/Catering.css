@@ -1,0 +1,118 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+.CAparallax-1 {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    
+    align-items: center;
+    background-image: url("/public/assets/gummyice.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara1{
+    margin-top: 300px;
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /*font-size: large;*/
+}
+
+.CAparallax-2 {
+    min-height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/public/assets/haagen1.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara2{
+    margin-top: 300px;
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.CAparallax3 {
+    min-height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("/public/assets/haagen2.jpeg"); /* Replace with your image */
+    text-align: center;
+}
+
+.CApara3{
+    position: relative;
+    top: 50%; /* Position the element 50% from the top */
+    left: 50%; /* Position the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    background-color: rgba(255, 255, 255, 1); /* Add a background color with some transparency */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.CAparallax-last {
+    /* The image used for the first parallax section */
+    background-color: black;
+    min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
+    
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+
+    color: white;
+    padding: 2rem;
+
+}
+
+.CApara3-last {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
