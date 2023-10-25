@@ -109,10 +109,10 @@ function IceCream(props){
                 // Perform any necessary actions for two flavor selection
               }
             }
-          
             // Update the cart count
-            
-            setcartitems(cartitems + 1);
+            props.setcartitems(props.cartitems.concat(selectedFlavors));
+
+            clearSelection();
           
             // Open the cart when a selection is confirmed
             openCart();
@@ -169,7 +169,6 @@ function IceCream(props){
                 ))}
             </div> 
            
-
             <div id="selected-flavors" style={{ top: `${selectedFlavorsTop}px` }}>
             {/* top is a css property mean to determine the distance from the top edge of the element's containing block */}
             {/* px specifies pixels */}

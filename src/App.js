@@ -32,12 +32,12 @@ function App() {
     
     <Router>
     <ScrollToTop/>
-    <Cart/>
+    <Cart cartitems={cartitems} />
       <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/Home"  exact element={<Home/>} />
           <Route path="/About" exact element={<About/>} />
-          <Route path="/IceCream" exact element={<IceCream/>} />
+          <Route path="/IceCream" exact element={<IceCream cartitems={cartitems} setcartitems={setcartitems} />} />
           <Route path="/Catering" exact element={<Catering/>} />
           {/* Add more routes here for other pages */}
       </Routes>
@@ -48,5 +48,3 @@ function App() {
 
 
 export default App;
-
-
